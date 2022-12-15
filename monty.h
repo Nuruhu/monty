@@ -18,14 +18,6 @@ extern int push_arg;
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO Holberton project
  */
-typedef struct bus_s
-{
-	char *arg;
-	FILE *file;
-	char *content;
-	int lifi;
-} bus_t;
-extern bus_t bus;
 typedef struct stack_s
 {
 	int n;
@@ -94,8 +86,4 @@ void free_dlistint(stack_t *head);
 void dobfree(stack_t **stack);
 void dobfree2(stack_t **stack);
 int _isalpha(int c);
-void f_queue(stack_t **head, unsigned int counter);
-void f_stack(stack_t **head, unsigned int counter);
-void addqueue(stack_t **head, int n);
-void addnode(stack_t **head, int n);
 #endif
